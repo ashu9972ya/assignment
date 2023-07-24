@@ -1,0 +1,248 @@
+.Analytics {
+    min-height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+@media screen and (max-width: 1000px){
+.sideContent {
+    display: none;
+}
+}
+
+.sideContent {
+    background: #192f48;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 60px;
+}
+.container {
+    margin: 2rem 5rem;
+}
+
+@media screen and (max-width: 1000px){
+.container {
+    margin: 0;
+    padding: 1.5rem;
+}
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.heading {
+    font-size: 2rem;
+}
+
+.filterContainer-MainSection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    position: relative;
+}
+.filterContainer-MainSection .filterContainer-DatePickerRegion {
+    padding: 0.5rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+}
+.filterContainer-MainSection .filterContainer-DatePickerRegion svg {
+    color: #136fed;
+}
+
+.filterContainer-SettingsRegion {
+    display: flex;
+    gap: 6px;
+    /* font-weight: medium; */
+    text-align: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: #eaeaea;
+    background: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.icon {
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    color: #136fed;
+}
+
+.tableContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.tableContainer-EmptyContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem;
+    background: #f9f9f9;
+}
+
+.tableContainer-EmptyContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem;
+    background: #f9f9f9;
+}
+
+.tableContainer-EmptyImage img {
+    max-width: 300px;
+}
+
+.tableContainer-EmptyBody h3 {
+    color: #1d1a1a;
+    font-size: 1.5rem;
+}
+
+.tableContainer-EmptyBody p {
+    color: #b9b9b9;
+    margin-top: 0.5rem;
+}
+
+.filterContainer-MainSection .datePickerContainer {
+    position: absolute;
+    top: 45px;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 300px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: #63636333 0 2px 8px;
+}
+
+input {
+    border: none!important;
+    outline-color: #eaeaea!important;
+    padding: 0.85rem 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.filterContainer-MainSection .datePickerContainer-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.cancelButton {
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    color: #136fed;
+    background: transparent;
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+}
+
+.applyButton {
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #136fed;
+    cursor: pointer;
+    background-color: #136fed;
+}
+
+.settingsContainer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: #eaeaea;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+}
+.secondary-heading {
+    font-size: 1.5rem;
+}
+.settingsContainer-DragZone {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.settingsContainer-DragZone .selected {
+    border-left: 4px solid #136fed;
+    cursor: grabbing;
+
+}
+
+.settingsContainer-fields {
+    border: 1px solid #eaeaea;
+    /* border-left: 4px solid #eaeaea; */
+    background: none;
+    border-radius: 4px;
+    text-align: left;
+    padding: 0.5em 1rem;
+    width: 150px;
+    text-transform: capitalize;
+    cursor: grab;
+
+}
+
+.settingsContainer-fields.dragging {
+    opacity: 0.5;
+  }
+.settingsContainer-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.cancelButton {
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    color: #136fed;
+    background: transparent;
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+}
+.applyButton {
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #136fed;
+    cursor: pointer;
+    background-color: #136fed;
+}
